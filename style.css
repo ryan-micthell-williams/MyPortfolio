@@ -15,6 +15,16 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color:#100;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 15px;
+  margin-bottom: 10px; 
+  text-align: center;
+}
+
 p {
   font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
@@ -215,16 +225,27 @@ p {
     margin: 25px;
   }
   
-  #quote {
+  #openQuote {
     color: black;
     margin: 25px 25px;
     font-style: italic;
   }
 
-  #quote + p {
+  #closeQuote {
+    color: black;
+    margin: 25px 25px;
+    font-style: italic;
+  }
+
+  div i p {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 52px;
     margin: 20px 0 0 0;
+  }
+
+  #contactForm button {
+    max-width: 25%;
+    margin-top: 8px;
   }
   
 }
