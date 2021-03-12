@@ -22,8 +22,14 @@ body {
   align-items: center;
   margin: 0;
   height: 100vh; 
+  width: 100%;
   background-color: whitesmoke;
-  min-height: 800px;
+}
+
+#wrapper {
+  min-width: 350px; 
+  overflow: scroll; 
+  padding: 20px; 
 }
 
 nav {
@@ -44,7 +50,6 @@ ul {
   flex-direction: row;
   justify-content: space-around;
   list-style: none;
-  min-width: 400px; 
   margin-block-end: 1em; 
   margin-block-start: 1em; 
 }
@@ -55,17 +60,6 @@ ul {
   font-size: 20px;
   text-decoration: none;
   margin: 10px 0; 
-}
-
-main {
-  height: 100vh;
-  width: 95%;
-  min-width: 400px;
-  overflow-y: auto;
-}
-
-main::-webkit-scrollbar {
-  display: none;
 }
 
 #links {
@@ -85,20 +79,19 @@ main::-webkit-scrollbar {
 }
 
 .item {
-  width: 90%;
-  height: 65vh;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  position: relative; 
+  align-items: center;
 }
 
 .item img {
-  position: relative;
   image-rendering: smooth;
   padding: 5%;
+  max-height: 35%;
+  max-width: 35%;
   filter: grayscale(50%);
-  filter: drop-shadow(0 0 0.75rem black);  
+  filter: drop-shadow(0 0 0.75rem black); 
 }
 
 p {
@@ -168,57 +161,12 @@ p {
     font-size: 32px;
   }
 
-  #title h1 and h2{
-    display: flex;
-    flex-direction: column;
-  }
-
   hr {
     margin-top: 10%;
     margin-bottom: 10%;
   }
 
-  body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-  }
-
-  nav div {
-    margin-left: 15%;
-  }
-
-  #navID ul {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #navID ul li {
-    margin-bottom: 20px;
-  }
-
-  main {
-    height: 100vh;
-    width: 75%; 
-    overflow-y: auto; 
-  }
-
-  main::-webkit-scrollbar {
-    display: none;
-  }
-
   .item {
-    width: 99%;
-    height: 105vh;
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -262,22 +210,6 @@ p {
   #quote + p {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 24px;
-    margin: 25px;
-  }
-
-}
-
-@media (min-width: 1250px) {
-  p {
-    font-size: 24px;
-    word-spacing: 5px;
-    letter-spacing: 1px;
-  }
-
-  
-  #quote + p {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 32px;
     margin: 25px;
   }
 

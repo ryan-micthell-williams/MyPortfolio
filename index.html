@@ -21,15 +21,17 @@
     /> 
   </head> 
   <body>
+  <div id="wrapper"> 
     <nav> 
       <div id="title">
         <h1>RYAN WILLIAMS</h1>
         <h2> | software developer |</h2>
       <div id="navID"> 
         <ul>
-          <li><a href="#myWork">[my work]</a></li>
-          <li><a href="#myStory">[my story]</a></li>
-          <li><a href="#contactFormContainer">[contact me]</a></li>
+          <li><a href="#projects">[projects]</a></li>
+          <li><a href="#intro">[intro]</a></li>
+          <li><a href="#aboutMe">[about]</a></li>
+          <li><a href="#contactFormContainer">[contact]</a></li>
         </ul>
       </div>
       <div id="links"> 
@@ -41,7 +43,7 @@
       </div>
     </nav>
     <main>
-        <div class="item" id="myWork" onclick="location.href=`https://github.com/ryan-micthell-williams/local-library-project`;">
+        <div class="item" id="projects">
             <img src="./img/library.jpg" alt="library-image"> 
           <div class="projectName">
             <h1>
@@ -51,11 +53,12 @@
           <div class="projectDescription">
             <h2>the goal:</h2> 
               <p>Build the algorithms necessary for a local library to keep track of general statistics including which books are available, which are presently checked-out, which users have which books, which books are overdue, etc.
-              </p>  
+              </p> 
           </div>
+            <h2><a href="https://github.com/ryan-micthell-williams/local-library-project">[project link]</a></h2>
         </div> 
         <hr> 
-        <div class="item" id="projectTwo" onclick="location.href=`https://github.com/ryan-micthell-williams/Project_Decoder_Ring_`;">
+        <div class="item" id="projectTwo">
             <img src="./img/decoder-ring.jpg" alt="decoder-ring-image"> 
           <div class="projectName">
             <h1>
@@ -67,6 +70,7 @@
               <p>Create several complex algorithms to emulate several notable encryption and decryption systems used throughout history such as the Caesar Shift, the Polybius Square, and the Substitution Cipher. 
               </p>  
           </div>
+          <h2><a href="https://github.com/ryan-micthell-williams/Project_Decoder_Ring_">[project link]</a></h2>
         </div> 
         <hr> 
         <div class="item" id="intro">
@@ -121,5 +125,6 @@
         </form>
       </div>
     </main>
+  </div> 
   </body>
 </html>
