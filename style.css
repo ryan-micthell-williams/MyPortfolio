@@ -173,6 +173,7 @@ p {
     margin-top: 10%;
     margin-bottom: 10%;
     max-width: 55%;
+    align-items: center;
   }
 
   .item {
@@ -180,7 +181,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 80%;
+    max-width: 100%;
   }
 
   #contactForm {
@@ -222,7 +223,7 @@ p {
 
   #quote + p {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-size: 52px;
     margin: 20px 0 0 0;
   }
   
