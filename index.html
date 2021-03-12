@@ -1,121 +1,110 @@
 <!DOCTYPE html>
-
 <html lang="en">
+  <head>
+    <title>Ryan Williams Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato:ital,wght@0,300;1,300&family=Roboto+Slab:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    /> 
+  </head> 
+  <body>
+    <nav> 
+      <div id="title">
+        <h1>RYAN WILLIAMS</h1>
+        <h2>software engineer | editor | producer</h2>
+        <img src="./img/headshot.jpg" alt="profile-picture"> 
+      </div>
+      <div id="navID"> 
+        <ul>
+          <li><a href="#myWork">[my work]</a></li>
+          <li><a href="#myStory">[my story]</a></li>
+          <li><a href="#myInfo">[contact me]</a></li>
+        </ul>
+      </div>
+      <div id="links"> 
+        <ul>
+          <li><a href="https://www.linkedin.com/in/ryanwillyamz/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+          <li><a href="https://github.com/ryan-micthell-williams" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></li>
+          <li><a href="mailto:ryan.mitchell.official@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-lg"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+        <div class="item" id="myWork" onclick="location.href=`https://github.com/ryan-micthell-williams/local-library-project`;">
+            <img src="./img/library.jpg" alt="library-image"> 
+          <div class="projectName">Local Library Project</div>
+          <div class="projectDescription">
+            <h2>The Goal:</h2> 
+              <p>Build the algorithms necessary for a local library to keep track of general statistics including which books are available, which are presently checked-out, which users have which books, which books are overdue, etc.
+              </p>  
+          </div>
+        </div> 
+        <div class="item" id="projectTwo" onclick="location.href=`https://github.com/ryan-micthell-williams/Project_Decoder_Ring_`;">
+            <img src="./img/decoder-ring.jpg" alt="decoder-ring-image"> 
+          <div class="projectName">Decoder Ring Project</div>
+          <div class="projectDescription">
+            <h2>The Goal:</h2> 
+              <p>Create several complex algorithms to emulate several notable encryption and decryption systems used throughout history such as the Caesar Shift, the Polybius Square, and the Substitution Cipher. 
+              </p>  
+          </div>
+        </div> 
+        <div class="item" id="myStory">
+          <h3> | The Man Behind the Monitor | </h3>
+              <p>
+                All my life, I have possessed an insatiable desire to learn and expand my horizons both intellectually and professionally.
+              </p>
+              <p>
+                Before I began my quest to become a software engineer under the tutelage of the wonderful minds at Thinkful, I found myself pursuing a career in medicine. Unfortunately, that journey was put on an indefinite hold due to the ever-increasing severity of the COVID-19 pandemic.
+              </p>
+              <p>
+                But the show must go on, and I have never been one to linger in stagnant waters for very long. In the indefinite interim between my departure and my uncertain return to ultrasound school, I felt compelled to satisfy my technological curiosity and pursue a career in another field that greatly interested me. The tech industry enables the most potent and immediate change within our society. If I can't save lives through healthcare, then why not drastically improve people's lives with digital creations that foster the best aspects of human ingenuity. I seek to realize a dream encapsulated quite poetically in a quote from a deeply flawed yet brilliant crusader of technological innovation, the late Steve Jobs,
+              </p> 
+            <div class="blockQuote" id="blockQuote">
+              <i class="fa fa-quote-left fa-2x" id="quote"></i>
+              <p>
+                [T]he computer is the most remarkable tool that we've ever come up with. It's the equivalent of a bicycle for our minds. What if, instead of being in the right hands, it was in everyone's hands? Everyone in the world. 
+              </p>
+              <i class="fa fa-quote-right fa-2x" id="quote"></i>
+            </div>
+            <div class="item" id="contactFormContainer">
+              <form id="myInfo" action="https://formspree.io/f/xpzognzn" method="POST">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" />
 
-<head>
+                <label for="emaill">Email</label>
+                <input id="emaill" name="email" type="email" />
 
-  <meta name="description" content="Webpage Portfolio of Ryan Williams">
-  <meta name="keywords" content="Ryan Williams, Portfolio, Software Engineer, Javascript, HTML, CSS">
-  <meta name="author" content="Ryan Williams">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Ryan Williams Portfolio Webpage</title>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <link href="style.css" rel="stylesheet" type="text/css"/>
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  placeholder="Feel free to reach out"
+                  id="message"
+                ></textarea>
 
-</head>
+                <button type="submit">Send</button>
+              </form>
+            </div>
 
-<body>
+            <hr>
 
-  <header>
-
-    <h1>Ryan Williams</h1>
-    <h2>Software Engineer</h2>
-
-  </header>
-
-  <main>
-
-    <img src="headshot.jpeg" alt="professional headshot" width="300" />
-
-    <!--introduce yourself and give a brief summary of your defining characteristics as a developer and an employee-->
-
-    <article class="introduction">
-
-      <h3> [ WELCOME TO MY PORTFOLIO ] </h3>
-
-      <hr>
-
-      <!--establish who you are and where your are located right off the bat-->
-
-      <p> I'm a software developer based in Memphis, TN.</p>
-
-      <p> As a former sonography trainee who interned alongside ultrasound technicians during the COVID-19 pandemic, and a second degree black belt // part-time instructor in Taekwondo, there's three things I value above all other in my professional life:</p>
-
-      <ol>
-
-        <li> <b>Integrity</b> - the compulsion and the fortitude to stick to one's principles and ethics even in the face of adversity. </li>
-
-        <li> <b>Discipline</b> - the desire and the dedication to perform one's duties to the best of their ability.</li>
-
-        <li> <b>Teamwork</b> - mutual respect and professional communication among coworkers that fosters grand achievement via cooperation.</li>
-
-      </ol>
-	    
-    </article>
-
-    <!--link your email address, LinkedIn profile, and Github at the end of the introduction so that employers immediately know how to contact you and can easily locate information related to your job qualifications-->
-
-    <hr>
-
-    <article class="contact_information">
-
-      <h3> [ Contact Information ] </h3>
-
-      <ul>
-
-        <li> <a href="mailto:ryan.mitchell.official@gmail.com">Email</a></li>
-
-        <li> <a href="https://www.linkedin.com/in/ryan-williams-7a4470192/">LinkedIn</a></li>
-
-        <li> <a href="https://github.com/ryan-micthell-williams">Github</a></li>
-
-      </ul>
-
-    </article>
-
-    <hr>
-
-    <article class="about_me">
-
-      <h3> [ The Man Behind the Monitor ] </h3>
-
-     <!--divulge the driving force behind your decision to enter this field as well as other hobbies and interests that also stem from your defining characteristics-->
-
-      <p>All my life, I have possessed an insatiable desire to learn and expand my horizons both intellectually and professionally.</p>
-
-      <p>Before I began my quest to become a software engineer under the tutelage of the wonderful minds at Thinkful, I found myself pursuing a career in medicine. Unfortunately, that journey was put on an indefinite hold due to the ever-increasing severity of the COVID-19 pandemic.</p>
-
-      <p>But the show must go on, and I have never been one to linger in stagnant waters for very long. In the indefinite interim between my departure and my uncertain return to ultrasound school, I felt compelled to satisfy my technological curiosity and pursue a career in another field that greatly interested me.</p>
-
-      <h4> | My Passions & Hobbies | </h4>
-      <ul>
-        <li><b>Filmmaking</b> - I have helped produce several short films and music videos with my friends and local creators. </li>
-        <li><b>Political Activism</b> - I find it incredibly important to peacefully advocate for the change I wish to see in the world. I work hard to stay involved and informed about the issues present within my community, and assist those who are striving to address them.</li>
-        <li><b>Health & Fitness</b> - I am a firm believer that diet is the best medicine. I have been a vegan for over five years, and I enjoy spreading tips and advice about the lifestyle to all who find it interesting. Additionally, as a martial artist, I find myself equally enthusiastic about staying in shape. Whether its sparring, running, biking, or weightlifting, I try to regularly push myself physically.  </li>
-      </ul>
-	    
-    </article>
-
-  </main>
-
-    <hr>
-
-  <footer>
-
-		<p>© Ryan Williams</p>
-
-		<p>Designed by Ryan Williams</p>
-
-    <p><a href="tel:(901)-730-2955">
-      (901)-730-2955</a></p>
-
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+            <footer>
+              <p>
+                Designed by © Ryan Williams
+              </p>
+            </footer>
+      </main>
+  </body>
 </html>
