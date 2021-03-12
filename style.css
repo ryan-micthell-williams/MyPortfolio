@@ -15,6 +15,13 @@ h2 {
   text-align: center;
 }
 
+p {
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  word-spacing: 3px;
+  font-weight: 300;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -189,9 +196,10 @@ p {
   }
 
   p {
-    font-size: 28px;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
     word-spacing: 3px;
-    font-weight: 500;
+    font-weight: 400;
   }
   
   #quote {
