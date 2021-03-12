@@ -162,9 +162,17 @@ p {
 
 @media (min-width: 750px) {
 
+  .item h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #100;
+    font-size: 36px;
+    text-align: center;
+  }
+
   hr {
     margin-top: 10%;
     margin-bottom: 10%;
+    max-width: 55%;
   }
 
   .item {
@@ -172,7 +180,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 60%;
+    max-width: 80%;
   }
 
   #contactForm {
@@ -202,17 +210,20 @@ p {
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 32px;
     word-spacing: 3px;
-    font-weight: 400;
-    margin: 20px;
+    font-weight: 200;
+    margin: 25px;
   }
   
   #quote {
     color: black;
     margin: 25px 25px;
     font-style: italic;
+  }
+
+  #quote + p {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-    margin: 25px;
+    font-size: 18px;
+    margin: 20px 0 0 0;
   }
   
 }
