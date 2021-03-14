@@ -45,9 +45,9 @@ body {
 }
 
 #wrapper {
-  min-width: 350px; 
+  min-width: 375px; 
   overflow: scroll; 
-  padding: 10%; 
+  padding: 15%; 
 }
 
 nav {
@@ -197,24 +197,27 @@ p {
   #contactForm {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 25%;
   }
 
   #contactForm label {
     font-size: 1.75rem;
+    margin-top: 8px; 
+    margin-bottom: 3px;
   }
   #contactForm input {
-    line-height: 1.75rem;
-    padding: 3%;
+    line-height: 1rem;
   }
 
   #contactForm textarea {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     line-height: 2rem;
-    height: 25%;
-    padding: 5%;
     background-color: rgb(124, 124, 124);
     border-width: thin;
+  }
+
+  ::placeholder {
+    color: black;
   }
 
   p {
@@ -244,7 +247,9 @@ p {
   }
 
   #contactForm button {
-    max-width: 25%;
+    max-width: 20%;
+    line-height: 1.75rem;
+    font-size: 1.5rem;
     margin-top: 8px;
   }
   
