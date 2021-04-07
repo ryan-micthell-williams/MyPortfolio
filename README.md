@@ -4,7 +4,7 @@
 <!-- Hoizontal line --> 
 ___
 <!-- Image --> 
-![Portfolio Preview](/?raw=true)
+![Portfolio Preview](/img/app-in-action.png?raw=true)
 <!-- Horizontal line -->
 <!-- UL -->
 ### My Portfolio accomplishes the following: 
